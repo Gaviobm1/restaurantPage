@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Mina';
+    src: url('./Mina-Regular.ttf') format('ttf');
+}
+
+body {
+    font-family: 'Mina';
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
