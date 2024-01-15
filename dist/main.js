@@ -120,13 +120,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   ContactPage: () => (/* binding */ ContactPage)\n/* harmony export */ });\n\n\nconst ContactDiv = document.getElementById('content');\nconst ContactHeading = document.createElement('h3');\nContactHeading.innerHTML= \"Contact Us:\"\n\nconst Contacts = document.createElement('p')\nContacts.innerHTML = \"Telf: 95643739\\nEmail: fakeemail@gmail.es\\nAddress: Calle Bermudez de Castro 45, Oviedo, 33011\"\n\nconst ContactPage = () => {\nContactDiv.appendChild(ContactHeading);\nContactDiv.appendChild(Contacts);\n}\n\n\n\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/contact.js?");
+
+/***/ }),
+
 /***/ "./src/homepage.js":
 /*!*************************!*\
   !*** ./src/homepage.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   MainDiv: () => (/* binding */ MainDiv)\n/* harmony export */ });\n/* harmony import */ var _panda_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panda.jpeg */ \"./src/panda.jpeg\");\n\n\n\nconst MainDiv = document.getElementById('content');\n\nconst RestaurantName = document.createElement('h1');\nRestaurantName.innerHTML = 'Restaurant of China';\n\nconst SubTitle = document.createElement('h2');\nSubTitle.innerHTML = 'Where you\\'ll eat adequately!';\n\nconst Info = document.createElement('p');\nInfo.innerHTML = \"Came for lunch with my sister. We loved our Thai-style mains which were amazing with lots of flavour, very impressive for a vegetarian restaurant.\\n\\nBut the service was below average and the chips were too terrible to finish.When we arrived at 1.40, we had to wait 20 minutes while they got our table ready. OK, so we didn't have a reservation, but the restaurant was only half full. \\n\\nThere was no reason to make us wait at all.We ordered the chips as a side dish and they looked delicious. But, when we tasted them, they were overcooked and swimming in oil so we left most of them. We expected a lot more for $10!\";\n\nconst myFlag = new Image();\nmyFlag.src = _panda_jpeg__WEBPACK_IMPORTED_MODULE_0__\n\nMainDiv.appendChild(RestaurantName);\nMainDiv.appendChild(SubTitle);\nMainDiv.appendChild(myFlag);\nMainDiv.appendChild(Info);\n\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   HomePage: () => (/* binding */ HomePage)\n/* harmony export */ });\n/* harmony import */ var _panda_jpeg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./panda.jpeg */ \"./src/panda.jpeg\");\n\n\n\nconst MainDiv = document.getElementById('content');\n\nconst RestaurantName = document.createElement('h1');\nRestaurantName.innerHTML = 'Restaurant of China';\n\nconst SubTitle = document.createElement('h2');\nSubTitle.innerHTML = 'Where you\\'ll eat adequately!';\n\nconst Info = document.createElement('p');\nInfo.innerHTML = \"Came for lunch with my sister. We loved our Thai-style mains which were amazing with lots of flavour, very impressive for a vegetarian restaurant.\\n\\nBut the service was below average and the chips were too terrible to finish.When we arrived at 1.40, we had to wait 20 minutes while they got our table ready. OK, so we didn't have a reservation, but the restaurant was only half full. \\n\\nThere was no reason to make us wait at all.We ordered the chips as a side dish and they looked delicious. But, when we tasted them, they were overcooked and swimming in oil so we left most of them. We expected a lot more for $10!\";\n\nconst myFlag = new Image();\nmyFlag.src = _panda_jpeg__WEBPACK_IMPORTED_MODULE_0__\n\nconst HomePage = () => {\nMainDiv.appendChild(RestaurantName);\nMainDiv.appendChild(SubTitle);\nMainDiv.appendChild(myFlag);\nMainDiv.appendChild(Info);\n}\n    \n\n\n\n//# sourceURL=webpack://restaurantpage/./src/homepage.js?");
 
 /***/ }),
 
@@ -136,7 +146,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _navigation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navigation */ \"./src/navigation.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\n\n\n\nconst clearPage = () => {\n    while(MainDiv.firstChild) {\n        MainDiv.removeChild(MainDiv.lastChild);\n    }\n    MainDiv.appendChild(_navigation__WEBPACK_IMPORTED_MODULE_1__.homeBtn);\n    MainDiv.appendChild(_navigation__WEBPACK_IMPORTED_MODULE_1__.contactBtn);\n    MainDiv.appendChild(_navigation__WEBPACK_IMPORTED_MODULE_1__.menuBtn);\n    \n}\n\nconst MainDiv = document.getElementById('content');\nMainDiv.appendChild(_navigation__WEBPACK_IMPORTED_MODULE_1__.homeBtn);\nMainDiv.appendChild(_navigation__WEBPACK_IMPORTED_MODULE_1__.contactBtn);\nMainDiv.appendChild(_navigation__WEBPACK_IMPORTED_MODULE_1__.menuBtn);\n(0,_homepage__WEBPACK_IMPORTED_MODULE_0__.HomePage)();\n_navigation__WEBPACK_IMPORTED_MODULE_1__.homeBtn.addEventListener('click', () => {\n    clearPage();\n    (0,_homepage__WEBPACK_IMPORTED_MODULE_0__.HomePage)();\n})\n_navigation__WEBPACK_IMPORTED_MODULE_1__.contactBtn.addEventListener('click', () => {\n    clearPage();\n    (0,_contact__WEBPACK_IMPORTED_MODULE_2__.ContactPage)();\n})\n_navigation__WEBPACK_IMPORTED_MODULE_1__.menuBtn.addEventListener('click', () => {\n    clearPage();\n    (0,_menu__WEBPACK_IMPORTED_MODULE_3__.MenuPage)();\n})\n\n\n\n\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   MenuPage: () => (/* binding */ MenuPage)\n/* harmony export */ });\nconst MenuDiv = document.getElementById('content');\n\nconst menuHeading = document.createElement('h3');\nconst menuItem1 = document.createElement('p');\nconst menuItem2 = document.createElement('p');\nconst menuItem3 = document.createElement('p');\n\nmenuHeading.innerHTML = \"Menu\";\nmenuItem1.innerHTML = \"Ramen with egg noodles\";\nmenuItem2.innerHTML = \"Beef Chow Mein\";\nmenuItem3.innerHTML = \"Sweet and Sour Pork\"\n\nconst MenuPage = () => {\n    MenuDiv.appendChild(menuHeading)\n    MenuDiv.appendChild(menuItem1);\n    MenuDiv.appendChild(menuItem2);\n    MenuDiv.appendChild(menuItem3);\n}\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/navigation.js":
+/*!***************************!*\
+  !*** ./src/navigation.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   contactBtn: () => (/* binding */ contactBtn),\n/* harmony export */   homeBtn: () => (/* binding */ homeBtn),\n/* harmony export */   menuBtn: () => (/* binding */ menuBtn)\n/* harmony export */ });\n\nconst homeBtn = document.createElement('button');\nhomeBtn.innerHTML = 'Home';\n\nconst contactBtn = document.createElement('button')\ncontactBtn.innerHTML = 'Contacts';\n\nconst menuBtn = document.createElement('button');\nmenuBtn.innerHTML = 'Menu';\n\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/navigation.js?");
 
 /***/ }),
 

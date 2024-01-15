@@ -15,9 +15,11 @@ Info.innerHTML = "Came for lunch with my sister. We loved our Thai-style mains w
 const myFlag = new Image();
 myFlag.src = Flag
 
+const HomePage = () => {
 MainDiv.appendChild(RestaurantName);
 MainDiv.appendChild(SubTitle);
 MainDiv.appendChild(myFlag);
 MainDiv.appendChild(Info);
-
-export { MainDiv }
+}
+    
+export { HomePage }
